@@ -1,0 +1,173 @@
+body{
+	
+	background: #CADCFC !important;
+}
+/* For WebKit browsers */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.bg-primary{
+	
+	background: #00246B !important;
+}
+
+.banner{
+	
+	width:100%;
+	height:90vh;
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(../img/homepage.jpg);;
+	background-size:cover;
+	color:white;
+
+	
+}
+
+.my-card{
+	
+	padding: 40px;
+	background: #FFFFFF;
+	
+	
+	
+}
+
+
+
+/* SIDEBAR  */
+
+.sidebar{
+	
+	width: 18%;
+	background: white;
+	height: 100vh;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 100;
+	
+}
+
+
+
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 40%;
+    }
+}
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 30%;
+    }
+}
+@media (max-width: 800px) {
+    .sidebar {
+        width: 35%;
+    }
+}
+@media (max-width: 600px) {
+    .sidebar {
+        width: 40%;
+    }
+}
+@media (max-width: 400px) {
+    .sidebar {
+        width: 45%;
+    }
+}
+
+@media (max-width: 350px) {
+    .sidebar {
+        width: 50%;
+    }
+}
+
+
+
+
+.side{
+	margin-right:10px;
+}
+
+.sidebar a{
+	
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: black;
+	
+}
+
+.sidebar a:hover{
+	background: #00246B;
+	color: white;
+}
+
+.sidebar .divider{
+	
+	height: 0.5px;
+	width:100%;
+	background: #00246B;
+	margin-top: 10px;
+	
+	
+}
+
+.content{
+	margin-left: 20%;
+}
+
+.bars{
+	color:black;
+	z-index: 999;
+	width:100;
+}
+
+.sidebar .cross{
+	
+	position: absolute;
+    top:1px;
+	right: 20px;
+	font-size: 30px;
+	cursor: pointer;
+	color: #00246B;
+	
+	
+}
+
+.my_profile_picture{
+	width: 30px;
+	height: 30px;
+	object-fit:cover;
+	border-radius:50%;
+	margin-right:5px;
+}
+.nav-link, .navbar-brand, footer, .sidebar, .cross .btn .bg-primary{
+	font-weight: bold;
+}
+
+
+
+

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{normal/base::Layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title th:text="${title}"></title>
+</head>
+<body>
+<section>
+
+<div class="container">
+
+<div class="card text-center">
+
+<div class="card-body text-center">
+ <img src="" style="width: 200px; height:200px;" class="my_profile_picture" th:src="@{'/img/'+${user.imageUrl}}" alt="profile photo" />
+
+<h2 class="text-center" >NAME : <span th:text="${user.name}"></span> </h2>
+
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th style="font-weight: bold;"  scope="col" >USER ID</th>
+      <th style="font-weight: bold;" scope="col">CMUSER<span th:text="${user.id}" ></span></th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="font-weight: bold;" scope="row">EMAIL</th>
+      <td style="font-weight: bold;"><span th:text="${user.email}"></span></td>
+     
+    </tr>
+    
+    <tr>
+      <th style="font-weight: bold;" scope="row">ROLE</th>
+      <td style="font-weight: bold;"><span th:text="${user.role}"></span></td>
+     
+    </tr>
+    
+    <tr>
+      <th style="font-weight: bold;" scope="row">ACCOUNT ACTIVE</th>
+      <td style="font-weight: bold;"><span th:text="${user.enabled}"></span></td>
+     
+    </tr>
+    
+      <tr>
+      <th style="font-weight: bold;" scope="row">ABOUT YOU</th>
+      <td style="font-weight: bold;"><span th:text="${user.about}"></span></td>
+     
+    </tr>
+    
+    
+   
+  </tbody>
+  
+  
+  
+</table>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</section>
+	
+</body>
+</html>

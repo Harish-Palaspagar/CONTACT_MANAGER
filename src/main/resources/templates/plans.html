@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::Layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>ABOUT PAGE</title>
+</head>
+<body>
+<section>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 " style="color:#00246B  ; font-weight: bold;" >PLANS</h1>
+      
+    </div>
+
+    <div class="container mt-3">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header bg-primary">
+            <h4 class="my-0 text-white" style="font-weight: bold;">FREE</h4>
+          </div>
+          <div class="card-body ">
+            <h1 class="card-title pricing-card-title" style="font-weight: bold;"> 0 RS <small style="font-weight: bold;" class="text-muted">/ month</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li style="font-weight: bold;">CAN SAVE UPTO 100 CONTACTS </li>
+              <li style="font-weight: bold;">2 GB OF STORAGE</li>
+              <li style="font-weight: bold;">EMAIL SUPPORT</li>
+              <li style="font-weight: bold;">HELP CENTER ACCESS</li>
+            </ul>
+            <a type="button" style="font-weight: bold;" th:href="@{/register}" class="btn btn-lg btn-block text-white bg-primary">SIGN UP FOR FREE</a>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header bg-primary">
+            <h4 class="my-0 text-white" style="font-weight: bold;">PRO</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title" style="font-weight: bold;">300 RS<small style="font-weight: bold;" class="text-muted">/ month</small></h1> 
+            <ul class="list-unstyled mt-3 mb-4">
+              <li style="font-weight: bold;">CAN SAVE UPTO 500 CONTACTS</li>
+              <li style="font-weight: bold;">10 GB OF STORAGE </li>
+              <li style="font-weight: bold;">PRIORITY EMAIL SUPPORT</li>
+              <li style="font-weight: bold;">HELP CENTER ACCESS</li>
+            </ul>
+             <a type="button" style="font-weight: bold;" th:href="@{/register}" class="btn btn-lg btn-block text-white bg-primary">GET STARTED</a>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header bg-primary">
+            <h4 class="my-0  text-white" style="font-weight: bold;">ENTERPRISE</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title" style="font-weight: bold;">500 RS <small style="font-weight: bold;" class="text-muted">/ month</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li style="font-weight: bold;">CAN SAVE UPTO 1000 CONTACTS</li>
+              <li style="font-weight: bold;">15 GB OF STORAGE</li>
+              <li style="font-weight: bold;">PHONE AND EMAIL SUPPORT</li>
+              <li style="font-weight: bold;">HELP CENTER ACCESS</li>
+            </ul>
+              <a type="button" style="font-weight: bold;" th:href="@{/register}" class="btn btn-lg btn-block text-white bg-primary">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+</section>
+	
+</body>
+</html>

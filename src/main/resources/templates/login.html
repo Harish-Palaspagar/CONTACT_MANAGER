@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::Layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>LOGIN PAGE</title>
+</head>
+<body>
+<section>
+<div id="login">
+        
+        <div class="container mt-5 " >
+            <div id="login-row" class="row " >
+                <div  class="col-md-8 offset-md-2">
+                    <div  class="my-card mb-5">
+                        <form id="login-form" class="form" th:action="@{/dologin}" method="post">
+                        
+                        
+						<div class="container mb-2 text-center">
+							<img style="width: 50px;" th:src="@{/img/register.png}"
+								alt="image" />
+						</div>
+                        
+                            <h3 class="text-center ">LOGIN</h3>
+                            
+                            <div th:if="${param.error}" class="alert alert-danger">
+                            INVALID USERNAME OR PASSWORD
+                            
+                            </div>
+                            
+                              <div th:if="${param.logout}" class="alert alert-success">
+                             YOU HAVE BEEN LOGGED OUT
+                            
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <label for="username" style="font-weight: bold;" >USERNAME / EMAIL</label><br>
+                                <input  type="text" name="username" id="username" class="form-control" placeholder="ENTER YOUR USERNAME HERE">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" style="font-weight: bold;">PASSWORD</label><br>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="ENTER YOUR PASSWORD HERE">
+                            </div>
+                            
+                            <div class="form-group">
+                           
+                          
+                               <div class=" container text-center">
+                               <button style="font-weight: bold;" class="btn  bg-primary text-white">SUBMIT</button>
+                               </div>
+                            </div>
+                            
+                            <div id="register-link" class="text-center ">
+                                <a href="/register" style="font-weight: bold;" class="text-info">NOT REGISTERED ? CLICK HERE</a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	
+</body>
+</html>

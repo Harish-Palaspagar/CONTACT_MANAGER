@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::Layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>HOME PAGE</title>
+	
+	
+	
+</head>
+<body>
+
+
+<section>
+
+<div class="banner d-flex justify-content-center align-items-center ">
+<div class="text-center">
+
+<h2>CONTACT MANAGER</h2>
+<p style="font-weight: bold;">START COLLECTING YOUR CONTACTS IN VERY SMARTER WAY. WE PROVIDE VERY EFFICIENT AND SMARTER WAY OF HANDLING CONTACTS.</p>
+
+<a style="font-weight: bold;" class="btn text-white bg-primary" th:href="@{/register}">GET STARTED</a>
+
+</div>
+</div>
+
+<div class=" container after-banner mt-5 " >
+
+        <!-- Example row of columns -->
+        <div class="row mb-5 ">
+          <div  style="padding:20px 30px ;border-radius:10px ;background:white;">
+            <h2>CONTACT MANAGER APP</h2>
+           <p style="font-weight: bold; text-transform: uppercase;">Manage your contacts efficiently with our intuitive Contact Manager App. Organize your contacts, keep track of interactions, and stay connected effortlessly. Whether it's for personal or professional use, our app simplifies your contact management tasks.</p>
+            <p ><a style="font-weight: bold;" class="btn btn-secondary bg-primary" href="#" th:href="@{/signin}" role="button">VIEW DETAILS &raquo;</a></p>
+          </div>
+        </div>
+        
+          <div class="row mb-5 ">
+          <div  style="padding:20px 30px ;border-radius:10px ;background:white;">
+            <h2>ABOUT OUR APP</h2>
+           <p style="font-weight: bold; text-transform: uppercase; ">Discover the features and benefits of our Contact Manager App. Learn how it streamlines contact organization, enhances communication, and boosts productivity. Our app is designed to meet your contact management needs effectively and efficiently.</p>
+            <p ><a style="font-weight: bold;" class="btn btn-secondary bg-primary" href="#" th:href="@{/about}"  role="button">VIEW DETAILS &raquo;</a></p>
+          </div>
+        </div>
+        
+          <div class="row mb-5 ">
+          <div  style="padding:20px 30px ;border-radius:10px ;background:white;">
+            <h2>PLANS AND PRICING</h2>
+            <p style="font-weight: bold; text-transform: uppercase;">Explore our flexible plans and pricing options for the Contact Manager App. Choose the plan that suits your requirements and budget. Whether you're an individual user or a business, we have tailored plans to cater to your contact management needs.</p>
+            <p ><a style="font-weight: bold;" class="btn btn-secondary bg-primary" th:href="@{/plans}" role="button">VIEW DETAILS &raquo;</a></p>
+          </div>
+        </div>
+
+
+
+ </div>
+
+
+
+</section>
+
+	
+	
+</body>
+</html>
